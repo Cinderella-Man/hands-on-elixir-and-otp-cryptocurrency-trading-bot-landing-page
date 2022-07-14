@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/responsive-style.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<title>Hands-on Elixir&OTP: Cryptocurrency trading bot</title>
+</head>
+
+<body>
+	<section class="hero-sec">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<div class="ylw-star">
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+						<p>Gumroad</p>
+					</div>
+					<div class="hero-content">
+						<h1>Gain <span>Hands-on</span> experience in <span>Elixir</span> & <span>OTP</span></h1>
+						<h2>Write and evolve a highly concurrent Elixir bot from prototype to a tested, fault-tolerant system.</h2>
+						<!-- <p><b>With “Hands-on Elixir & OTP:</b> Cryptocurrency trading bot”, you will gain hands-on experience by writing an exciting software project from scratch. We will explore all the key abstractions and essential principles through iterative implementation improvements.</p> -->
+					</div>
+					<img class="book-img visible-xs" src="./assets/images/book2.png" alt="">
+					<div class="d-flex align-items-center hero-btns">
+						<button class="sea-green-btn"><img src="./assets/images/g-icon.svg" alt="#" /> Purchase eBook on Gumroad</button>
+						<button class="trans-btn">Read free online</button>
+					</div>
+					<!-- <div class="d-flex align-items-center free-btn hero-btns buy-btn mt-0">
+						<button class="sea-green-btn amazon-btn"><img src="./assets/images/amazon.svg" alt="#" /> Purchase Print/Kindle on Amazon</button>
+					</div> -->
+				</div>
+				<div class="col-12 col-md-6 hidden-xs">
+					<img class="book-img" src="./assets/images/book2.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="learn-sec">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex justify-content-center">
+					<h1 class="book-head">What you will learn?</h1>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="learn-content">
+						<div>
+							<img src="./assets/images/map_icon.png" alt="">
+						</div>
+						<div>
+							<h4>
+								Setting up a new project
+							</h4>
+							<p>
+								No steps skipped. The book goes step by step through creating the non-trivial Elixir application from scratch.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="learn-content">
+						<div>
+							<img src="./assets/images/tree_structure_icon.png" alt="">
+						</div>
+						<div>
+							<h4>
+							  Orchestrating OTP processes 
+							</h4>
+							<p>
+								Starting with a single GenServer, adding supervision, additional features and supervision layers.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="learn-content">
+						<div>
+							<img src="./assets/images/arrow_loop_process_step_icon.png" alt="">
+						</div>
+						<div>
+							<h4>
+								Working iteratively
+							</h4>
+							<p>
+								Get something working in place, discuss the pros and cons and figure out how to improve it. Rinse & repeat
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="learn-content">
+						<div>
+							<img src="./assets/images/yin_yang_icon.png" alt="">
+						</div>
+						<div>
+							<h4>
+								Writing functional code
+							</h4>
+							<p>
+								Go deep into what functional is and where to draw a line between pragmatic and math noise.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 align-items-center hero-btns buy-btn">
+					<!-- <button class="sea-green-btn">Buy / Read</button> -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="customer-sec">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex justify-content-center">
+					
+				</div>
+				<div class="col-12 d-flex justify-content-center uper-head">
+					<h1>See What My Happy Readers Have Said</h1>
+				</div>
+			</div>
+		</div>
+		<div class="responsive">
+			<div>
+				<div class="happy-content">
+					<div class="m-img">
+						<img src="./assets/images/m.png" alt="">
+					</div>
+					<div class="ylw-star">
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+					</div>
+					<div class="scheme-content">
+						<h6>Highly recommended reading</h6>
+						<p>The most practical source of knowledge about the OTP-related topics I've ever seen! I've enjoyed watching the course and then jumped into reading the book, and whoah! I fully recommend reading, watching and following Kamil's content! It's just amazing if you still have problems with GenServers, Supervisors, etc. - thanks to this book, you can fully understand the pragmatic, practical usage of these mechanisms, which you can face in the Elixir language. Another thing that is not obvious is that you can easily get HOW to model and develop a loosely coupled application from this book. That's a rare and so important thing.</p>
+					</div>
+					<hr>
+					<div class="profile-content">
+						<div>
+							<img src="./assets/images/patryk_wozinski_profile.jpeg" alt="">
+						</div>
+						<div>
+							<h5>Patryk Woziński</h5>
+							<p>@patrykwozinski</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div>
+				<div class="happy-content">
+					<div class="m-img">
+						<img src="./assets/images/m.png" alt="">
+					</div>
+					<div class="ylw-star">
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+					</div>
+					<div class="scheme-content">
+						<h6>Unlimited color schemes</h6>
+						<p>With “Hands-on Elixir & OTP: Cryptocurrency trading bot”, you will gain hands-on experience
+							by writing an exciting software project from scratch. We will explore all the key </p>
+					</div>
+					<hr>
+					<div class="profile-content">
+						<div>
+							<img src="./assets/images/profile.png" alt="">
+						</div>
+						<div>
+							<h5>jane Doe</h5>
+							<p>Lorem Ipsum</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="happy-content">
+					<div class="m-img">
+						<img src="./assets/images/m.png" alt="">
+					</div>
+					<div class="ylw-star">
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+						<svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M11.8603 0.533447L14.5231 8.72869H23.14L16.1688 13.7936L18.8316 21.9889L11.8603 16.9239L4.88898 21.9889L7.55177 13.7936L0.580482 8.72869H9.19747L11.8603 0.533447Z"
+								fill="#FFB800" />
+						</svg>
+					</div>
+					<div class="scheme-content">
+						<h6>Unlimited color schemes</h6>
+						<p>With “Hands-on Elixir & OTP: Cryptocurrency trading bot”, you will gain hands-on experience
+							by writing an exciting software project from scratch. We will explore all the key </p>
+					</div>
+					<hr>
+					<div class="profile-content">
+						<div>
+							<img src="./assets/images/profile.png" alt="">
+						</div>
+						<div>
+							<h5>jane Doe</h5>
+							<p>Lorem Ipsum</p>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</section>
+	<section class="free-sec free-sec1">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6 free-img">
+					<iframe src="./assets/docs/hands-on-elixir-and-otp-cryptocurrency-trading-bot-sample.pdf"></iframe>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="free-content">
+						<h1>A Sneak Peek Into The Book</h1>
+						<p>With “Hands-on Elixir & OTP: Cryptocurrency trading bot”, you will gain hands-on experience
+							by writing an exciting software project from scratch. We will explore all the key </p>
+						<div class="free-list">
+							<ul>
+								<li>
+									With “Hands-on Elixir & OTP: Cryptocurrency trading bot”
+								</li>
+								<li>
+									With “Hands-on Elixir & OTP: Cryptocurrency trading bot”
+								</li>
+							</ul>
+						</div>
+						<a href="./assets/docs/hands-on-elixir-and-otp-cryptocurrency-trading-bot-sample.pdf">Download The Sample Chapters</a>
+						<!-- <div class="free-btn hero-btns buy-btn">
+							<button class="sea-green-btn">Buy / Read</button>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="faq-sec">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="uper-faq">
+						<h1>
+							Frequently Asked Questions
+						</h1>
+						<p>
+							Here are our readers' most commonly asked questions.
+						</p>
+					</div>
+					<div class="accord-sec">
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingOne">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+										Who is this book for?
+									</button>
+								</h2>
+								<div id="collapseOne" class="accordion-collapse collapse"
+									aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p>This book is dedicated to people with basic knowledge of Elixir & OTP that would like to see what creating non-trivial systems using them looks like.</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingTwo">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Is it finished?
+									</button>
+								</h2>
+								<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p>The core chapters are finished, and the remaining additions will be bonus chapters that extend the concepts further.</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingThree">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseThree" aria-expanded="false"
+										aria-controls="collapseThree">
+										Is there a free version?
+									</button>
+								</h2>
+								<div id="collapseThree" class="accordion-collapse collapse"
+									aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p>Yes! You can read this book online for free.</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingFour">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseFour" aria-expanded="false"
+										aria-controls="collapseFour">
+										How to support this book?
+									</button>
+								</h2>
+								<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p>The easiest way to support my book is to buy a PDF/EPUB copy via the <a href="https://kamilskowron.gumroad.com/l/cSGdY">Gumroad</a> platform.</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="elixir-sec">
+		<img class="otp-img1" src="./assets/images/otp-bg1.png" alt="#" />
+		<img class="otp-img2" src="./assets/images/otp-bg2.png" alt="#" />
+		<img class="otp-img3" src="./assets/images/otp-bg2.png" alt="#" />
+		<div class="container">
+			<div class="row">
+				<h1>Ready to gain hands-on experience in Elixir & OTP</h1>
+				<div class="d-flex align-items-center justify-content-center hero-btns">
+					<button class="sea-green-btn"><img src="./assets/images/g-icon.svg" alt="#"> Purchase eBook on Gumroad</button>
+					<button class="trans-btn">Read free online</button>
+				</div>
+				<!-- <div class="flex align-items-center free-btn hero-btns buy-btn mt-0">
+					<button class="sea-green-btn amazon-btn"><img src="./assets/images/amazon.svg" alt="#"> Purchase Print/Kindle on Amazon</button>
+				</div> -->
+			</div>
+		</div>
+	</section>
+	<section class="free-sec table-sec">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<div class="free-content">
+						<h1>Table of Contents</h1>
+						<p>Here is what you will find in the book</p>
+						<a href="#">Download the table of content</a>
+						<!-- <div class="free-btn hero-btns buy-btn">
+							<button class="sea-green-btn">Buy / Read</button>
+						</div> -->
+					</div>
+				</div>
+				<div class="col-12 col-md-6 free-img">
+					<iframe src="./assets/docs/hands-on-elixir-and-otp-cryptocurrency-trading-bot-contents.pdf"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="student-sec">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div>
+						<h1>
+							Readers Testimonials
+						</h1>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="twitter-box">
+						<div class="twitter-box-top d-flex justify-content-between align-items-center">
+							<div class="d-flex align-items-center">
+								<img src="./assets/images/profile.png" alt="#" />
+								<div>
+									<h6>Your Name</h6>
+									<p><a href="#">@username</a></p>
+								</div>
+							</div>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+						</div>
+						<div class="twitter-box-middle">
+							<p>I would love to invite you to tweet about this book so I can place it here!</p>
+							<!-- <img src="./assets/images/profile.png" alt="#" /> -->
+						</div>
+						<div class="twitter-box-footer">
+							<!-- <div class="twitter-heart">
+								<i class="fa fa-heart-o"></i>
+								<span>69</span>
+							</div>
+							<p><span>18:58</span> - <span>19 Sep 2022</span></p> -->
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="twitter-box">
+						<div class="twitter-box-top d-flex justify-content-between align-items-center">
+							<div class="d-flex align-items-center">
+								<img src="./assets/images/profile.png" alt="#" />
+								<div>
+									<h6>Your Name</h6>
+									<p><a href="#">@username</a></p>
+								</div>
+							</div>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+						</div>
+						<div class="twitter-box-middle">
+							<p>I would love to invite you to tweet about this book so I can place it here!</p>
+						</div>
+						<div class="twitter-box-footer">
+							<!-- <div class="twitter-heart">
+								<i class="fa fa-heart-o"></i>
+								<span>69</span>
+							</div>
+							<p><span>18:58</span> - <span>19 Sep 2022</span></p> -->
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="twitter-box">
+						<div class="twitter-box-top d-flex justify-content-between align-items-center">
+							<div class="d-flex align-items-center">
+								<img src="./assets/images/profile.png" alt="#" />
+								<div>
+									<h6>Your Name</h6>
+									<p><a href="#">@username</a></p>
+								</div>
+							</div>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+						</div>
+						<div class="twitter-box-middle">
+							<p>I would love to invite you to tweet about this book so I can place it here!</p>
+						</div>
+						<div class="twitter-box-footer">
+							<!-- <div class="twitter-heart">
+								<i class="fa fa-heart-o"></i>
+								<span>69</span>
+							</div>
+							<p><span>18:58</span> - <span>19 Sep 2022</span></p> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="free-sec author-sec">
+		<div class="container">
+			<div class="row align-items-center">
+				<h1>Who's Kamil Skowron</h1>
+				<div class="col-12 col-md-6 free-img">
+					<img src="./assets/images/kamil_skowron_avatar.JPG" alt="">
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="free-content">
+						<p>A life-long learner of programming with a special place in his heart for the functional programming.</p>
+
+						<p>With 10+ years of experience in engineering enterprise systems in various languages, starting with PHP and Node.js, currently focusing on Elixir. A true believer in learning by doing - hence this book!</p>
+						<!-- <img src="./assets/images/jessica-doe.png" alt=""> -->
+						<h6>Kamil Skowron</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="nav-sec footer-sec">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 left-a-tag">
+					<p>© 2022 Kamil Skowron. All Right Reserved</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script type="text/javascript" src="assets/js/jquery-3.3.1.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<script type="text/javascript">
+		$('.sea-green-btn').click(function() {
+			location.href = 'https://kamilskowron.gumroad.com/l/cSGdY';
+		});
+		$('.trans-btn').click(function() {
+			location.href = 'https://book.elixircryptobot.com';
+		});
+		
+		$('.responsive').slick({
+			dots: false,
+			infinite: true,
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			arrows: true,
+			prevArrow: "<button type='button' class='slick-prev pull-left'><svg width='17' height='14' viewBox='0 0 17 14' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M6.42175 12.8292L1.11214 7.51963C0.78632 7.19381 0.78632 6.66554 1.11214 6.33972L6.42175 1.03011C6.74757 0.704286 7.27584 0.704286 7.60166 1.03011C7.92749 1.35593 7.92749 1.8842 7.60166 2.21002L3.71634 6.09535H16.1637C16.6245 6.09535 16.998 6.46889 16.998 6.92967C16.998 7.39046 16.6245 7.764 16.1637 7.764H3.71634L7.60166 11.6493C7.92749 11.9752 7.92749 12.5034 7.60166 12.8292C7.27584 13.1551 6.74757 13.1551 6.42175 12.8292Z' fill='black'/></svg></button>",
+			nextArrow: "<button type='button' class='slick-next pull-right'><svg width='17' height='14' viewBox='0 0 17 14' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M10.5841 12.8292L15.8937 7.51963C16.2195 7.19381 16.2195 6.66554 15.8937 6.33972L10.5841 1.03011C10.2583 0.704286 9.73002 0.704286 9.40419 1.03011C9.07837 1.35593 9.07837 1.8842 9.40419 2.21002L13.2895 6.09535H0.842137C0.381352 6.09535 0.0078125 6.46889 0.0078125 6.92967C0.0078125 7.39046 0.381352 7.764 0.842137 7.764H13.2895L9.40419 11.6493C9.07837 11.9752 9.07837 12.5034 9.40419 12.8292C9.73002 13.1551 10.2583 13.1551 10.5841 12.8292Z' fill='black'/></svg></button>",
+			responsive: [{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}]
+		});
+	</script>
+	<script type="text/javascript">
+		setInterval(function(){
+			$('.customer-sec .slick-slide').removeClass('slick-opacity slick-opacity1');
+			$('.customer-sec .slick-slide.slick-current.slick-active').next().next().addClass('slick-opacity');
+			$('.customer-sec .slick-slide.slick-current.slick-active').next().addClass('slick-opacity1');
+			$('.customer-sec .slick-slide.slick-current.slick-active').prev().addClass('slick-opacity');
+		}, 100);
+	</script>
+</body>
+
+</html>

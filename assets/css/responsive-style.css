@@ -1,0 +1,232 @@
+.visible-xs {
+	display: none !important;
+}
+
+.hidden-xs {
+	display: block !important;
+}
+@media(min-width: 1440px) {
+	.free-sec .container{
+		max-width: 1140px;
+	}
+	.student-sec .container{
+		max-width: 1200px;
+	}
+}
+@media(max-width: 1000px) {
+
+	body,
+	html {
+		font-size: 14px;
+	}
+
+	.ylw-star svg {
+		width: 1.1rem;
+	}
+
+	.hero-content h1 {
+		font-size: 3rem;
+	}
+
+	.hero-content h2 {
+		font-size: 1.5rem;
+	}
+
+	.hero-content p {
+		font-size: .8rem;
+	}
+
+	.hero-btns .trans-btn {
+		margin-left: 0rem;
+		margin-top: 1rem;
+	}
+
+}
+
+@media(max-width: 767px) {
+	.visible-xs {
+		display: block !important;
+	}
+
+	.hidden-xs {
+		display: none !important;
+	}
+
+	html,
+	body {
+		overflow-x: hidden;
+		font-size: 16px;
+	}
+
+	.left-a-tag {
+		text-align: center;
+	}
+
+	.right-a-tag {
+		justify-content: center !important;
+	}
+
+	.hero-sec .align-items-center .col-12:nth-child(2){
+		order: 1;
+	}
+	.hero-sec .align-items-center .col-12:nth-child(1){
+		order: 2;
+	}
+
+	.hero-sec {
+		padding-top: 2rem;
+		padding-bottom: 4rem;
+	}
+
+	.book-head {
+		font-size: 3rem;
+	}
+
+	.learn-sec {
+		padding-top: 3rem;
+	}
+
+	.buy-btn {
+		margin-bottom: 2rem;
+	}
+
+	.customer-sec .ylw-star svg {
+		width: 1.1rem;
+	}
+
+	.uper-head h1 {
+		font-size: 2.5rem;
+	}
+
+	.customer-sec {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+
+	}
+
+	.uper-faq h1 {
+		font-size: 2.5rem;
+		text-align: center;
+	}
+
+	.free-content h1 {
+		font-size: 3rem;
+	}
+
+	.free-sec {
+
+		padding-top: 2rem;
+
+	}
+
+	.faq-sec {
+		padding: 2rem 0;
+	}
+
+	.table-sec .free-content p {
+		font-size: 1rem;
+	}
+
+	.table-sec .free-content h1 {
+		font-size: 2.5rem;
+	}
+
+	.student-sec {
+		padding: 2rem 0;
+	}
+
+	.student-sec h1 {
+		font-size: 2.5rem;
+	}
+
+	.author-sec h1 {
+		font-size: 2.5rem;
+		margin-bottom: 0rem;
+	}
+
+	.author-sec h1 {
+		text-align: start;
+	}
+
+	.customer-sec .slick-list{
+padding: 0 25px !important;
+}
+.slick-opacity1{
+	opacity: .4;
+}
+.nav-sec{
+	border-radius: 0;
+}
+.hero-btns .sea-green-btn{
+width: 65%;
+padding-left: 1rem;
+padding-right: 1rem;
+}
+.hero-btns .trans-btn{
+width: 32%;
+margin-left: 3%;
+padding-left: .5rem;
+padding-right: .5rem;
+margin-top:0;
+}
+.free-btn .sea-green-btn.amazon-btn{
+width: 100%;
+min-width: 100%;
+}
+.learn-sec .hero-btns .sea-green-btn{
+	width: 100%;
+}
+.happy-content {
+    margin: 0 .4rem;
+    margin-top: 1rem;
+}
+.free-sec1 .free-img{
+	order: 2;
+	margin-top: 2rem;
+}
+.author-sec h1{
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.free-sec.table-sec .free-img{
+	margin-top: 2rem;
+}
+}
+
+@media(max-width: 400px) {
+	.hero-sec .ylw-star {
+		justify-content: center;
+	}
+
+	.hero-sec {
+		text-align: center;
+	}
+
+	.book-head {
+		font-size: 2.5rem;
+	}
+
+	.free-content {
+		text-align: center;
+	}
+
+	.author-sec {
+		padding-bottom: 1.5rem;
+	}
+
+	.author-sec h1 {
+		text-align: center;
+	}
+	.table-sec .free-content .buy-btn
+	{
+		text-align: center;
+	}
+	.buy-btn
+	{
+		text-align: center;
+	}
+	.right-a-tag img
+	{
+		width: 1rem;
+	}
+}
