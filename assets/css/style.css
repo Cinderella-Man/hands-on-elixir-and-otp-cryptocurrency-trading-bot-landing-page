@@ -365,8 +365,13 @@ hr {
     color: #fff;
 }
 
+.table-sec .free-img iframe {
+    width: 48rem;
+    height: 20rem;
+}
+
 .free-img iframe {
-    width: 33rem;
+    width: 43rem;
     height: 20rem;
 }
 
