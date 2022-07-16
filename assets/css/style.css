@@ -572,6 +572,7 @@ hr {
 
 .author-sec .free-content p {
     font-size: 1.2rem;
+    max-width: none;
 }
 
 .author-sec .free-content h6 {
@@ -676,6 +677,9 @@ border-radius: 50%;
 margin-right: .5rem;
 padding: 1rem;
 background-color: #D9D9D9;
+}
+.twitter-box-top.real img{
+  padding: 0rem;
 }
 .twitter-box-top h6{
 font-weight: 600;
